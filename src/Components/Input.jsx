@@ -12,10 +12,10 @@ const Input = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center pt-14'>
+    <div className='flex flex-col items-center justify-center pt-22'>
       
       {/* Trip and Passenger Selection */}
-      <div className=" pr-110 gap-6 mb-6">
+      <div className=" flex pr-100 gap-6 ">
         <select
           value={tripType}
           onChange={(e) => setTripType(e.target.value)}
@@ -40,7 +40,7 @@ const Input = () => {
         </select>
       </div>
 
-<div className="relative flex items-center justify-center p-6 rounded-2xl max-w-3xl w-full">
+<div className="relative flex items-center justify-center p-2 rounded-2xl max-w-3xl w-full">
   {/* Input Group: From + To */}
   <div className="relative flex">
     {/* From Input */}
@@ -49,7 +49,7 @@ const Input = () => {
       placeholder="From"
       value={fromCity}
       onChange={(e) => setFromCity(e.target.value)}
-      className="px-5 py-3 w-64 rounded-l-xl bg-white shadow-md text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+      className=" pl-14 py-3 w-64 rounded-l-xl bg-white shadow-md text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
     />
 
     {/* Swap Button */}
@@ -68,7 +68,7 @@ const Input = () => {
       placeholder="To"
       value={toCity}
       onChange={(e) => setToCity(e.target.value)}
-      className=" pl-8 px-5 py-3 w-64 rounded-r-xl bg-white shadow-md text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
+      className=" pl-14 px-5 py-3 w-64 rounded-r-xl bg-white shadow-md text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300"
     />
   </div>
 
