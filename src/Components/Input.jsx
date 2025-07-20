@@ -15,7 +15,7 @@ const Input = () => {
     <div className='flex flex-col items-center justify-center pt-14'>
       
       {/* Trip and Passenger Selection */}
-      <div className="flex gap-6 mb-6">
+      <div className=" pr-110 gap-6 mb-6">
         <select
           value={tripType}
           onChange={(e) => setTripType(e.target.value)}
@@ -77,7 +77,6 @@ const Input = () => {
     Search
   </button>
 </div>
-
 
     </div>
   );
